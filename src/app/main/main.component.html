@@ -1,0 +1,681 @@
+<main class="theme-color-bg-light-yellow">
+    <section class="masthead  theme-color-bg-blue">
+        <div class="container ">
+            <div id="blue-bg" class="row gy-3 mt-5">
+                <div class="col-12 col-lg-6">
+                    <h1 class="sentence">
+
+                        Empowering your business through
+                        <span class="txt-type"></span>
+                        <!-- <div class="words words-1">
+                            <span>Design</span>
+                            <span>Code</span>
+                            <span>strategy</span>
+                        </div> -->
+                    </h1>
+                    <p class="desc">
+                        We empower your brand to navigate the digital landscape with our state-of-the-art UI/UX
+                        solutions, robust software development, and targeted digital marketing strategies.
+                    </p>
+                    <p class="">
+                        <a class="btn btn-xl btn-primary" routerLink='/contact-us'> Get Started!</a>
+                    </p>
+                </div>
+                <div class="empower col-12 col-lg-6">
+                    <picture>
+                        <!-- <source srcset="assets/img/main/empowering.avif" type="image/avif"> -->
+                        <img src="assets/img/main/empowering.webp" class="img-fluid" alt="empowering">
+                    </picture>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="svg">
+        <svg class="css-vxjk88" width="1620" height="128" viewBox="0 0 1620 128" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1620 0V53.3465L1528.65 79.1847C1518.92 81.9385 1508.89 83.5464 1498.79 83.9757L473.53 127.51C465.858 127.836 458.173 127.482 450.564 126.451L0 65.4176V0H1620Z">
+            </path>
+        </svg>
+    </section>
+
+    <section class="offerings pb-0">
+        <div class="container">
+            <div class="d-flex ">
+                <h2 class="offeringHeading d-flex gap-3">
+                    <img src="../../assets/img/main/our-offerings.svg" alt="Offerings">
+                    Our Offerings
+                </h2>
+                <div class="divider ms-3"></div>
+            </div>
+
+            <div class="section-content mt-3">
+                <div class="row row-gap">
+                    <div class="col-12 col-xl-6 ">
+                        <div class="accordion bg-color" id="accordionExample" #accordionExample>
+                            <div class="accordion-item" >
+                                <h2 class="accordion-header" >
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"  type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        UI/UX Design </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We blend functionality with aesthetics to craft intuitive journeys. We shape
+                                        user-centric experiences that empower, engage, and exceed expectations.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        Software Development </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Unlock captivating digital interfaces with our Front-End Engineering expertise,
+                                        bringing your online vision to life for seamless user engagement across devices.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Branding & Digital Marketing </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Unlock your business's potential with our digital marketing solutions. From SEO
+                                        and PPC to social media and content marketing, we create tailored strategies to
+                                        drive traffic, engagement, and conversions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Pitch Perfect Decks</button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Let our experienced team craft engaging,impactful Powerpoint presentations ,
+                                        from corporate decks to sales pitches.
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class=" offeringImg col-12  col-xl-5">
+                        <img src="../../assets/img/main/dot-line.webp" class="img-fluid" alt="perfection" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="container">
+            <div class="text-center">
+                <h2>
+                    Our Work
+                </h2>
+                <p>
+                    A glimpse of our portfolio
+                </p>
+            </div>
+            <div class="section-content mt-3 mt-xl-5">
+                <div class="row gy-3">
+                    <!-- first line card-a -->
+                    <div class="col-12  col-xl-8">
+                        <div class="card card-1 h-100">
+                            <div class="work-card reduce-width">
+                                <h3 class="work-heading"> <a routerLink="portfolio/1"> CRMS </a></h3>
+                                <div class="work-desc">
+                                    <p>Revitalized the existing CRM system with our design services and enhanced the
+                                        performance that drove the marketing success.</p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2">
+                                    <div class="badge rounded-pill badge-anarish">Design</div>
+                                    <div class="badge rounded-pill badge-anarish">Front End Development</div>
+                                </div>
+                            </div>
+                            <div class="work-img  no-shadow mt-4">
+                                <picture>
+                                    <!-- <source srcset="assets/img/main/crms.avif" type="image/avif"> -->
+                                    <img src="assets/img/main/crms.webp" class="img-fluid" alt="CRMS">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card b -->
+                    <div class="col-12 col-xl-4">
+                        <div class="card card-2 h-100 mb-3 mb-xl-0">
+                            <div class="work-img mb-5">
+                                <img src="../../assets/img/main/hrms.png" alt="hrms" class="img-fluid" />
+                            </div>
+                            <div class="work-card">
+                                <h3 class="work-heading"> <a routerLink="portfolio/2"> HRMS </a></h3>
+                                <div class="work-desc">
+                                    <p>
+                                        Transformed the HRMS with our design services and enhanced the performance to
+                                        streamlined HR processes.
+                                    </p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2">
+                                    <div class="badge rounded-pill badge-anarish">Design</div>
+                                    <div class="badge rounded-pill badge-anarish">Front End Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- second line card-a  -->
+                    <div class="col-12 col-xl-4">
+                        <div class="card card-2 h-100 mb-3 mb-xl-0">
+                            <div class="work-img">
+                                <picture>
+                                    <!-- <source srcset="assets/img/main/dm1.avif" type="image/avif"> -->
+                                    <img src="assets/img/main/dm1.webp" class="img-fluid" alt="digital marketing">
+                                </picture>
+                            </div>
+                            <div class="work-card">
+                                <h3 class="work-heading mt-4"> <a routerLink="portfolio/6"> Digital Marketing </a></h3>
+                                <div class="work-desc">
+                                    <p>Boost your brand's visibility and engagement with our comprehensive digital
+                                        marketing services, tailored to deliver measurable results.</p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2">
+                                    <div class="badge rounded-pill badge-anarish">Branding</div>
+                                    <div class="badge rounded-pill badge-anarish">Marketing Content</div>
+                                    <div class="badge rounded-pill badge-anarish">Video Production</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card-b -->
+                    <div class="col-12 col-xl-8">
+                        <div class="card card-1 h-100">
+                            <div class="work-card reduce-width">
+                                <h3 class="work-heading"> <a routerLink="portfolio/4"> Learning Management System </a>
+                                </h3>
+                                <div class="work-desc">
+                                    <p>Experience seamless learning with our expertly designed and developed LMS,
+                                        crafted to
+                                        enhance education and training efficiency.</p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2">
+                                    <div class="badge rounded-pill badge-anarish">Product</div>
+                                    <div class="badge rounded-pill badge-anarish">Product Design</div>
+                                    <div class="badge rounded-pill badge-anarish">Product Development</div>
+                                </div>
+                            </div>
+                            <div class="work-img mt-4">
+                                <img src="../../assets/img/main/lms.png" alt="learning management system"
+                                    class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third line card a -->
+                    <div class="col-12 col-xl-8">
+                        <div class="card card-1 h-100">
+                            <div class="work-card reduce-width">
+                                <h3 class="work-heading"> <a routerLink="portfolio/3"> Website Design and Development
+                                    </a></h3>
+                                <div class="work-desc">
+                                    <p>Elevate your online presence with our expert website design and development
+                                        services, tailored for maximum impact and engagement.</p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2">
+                                    <div class="badge rounded-pill badge-anarish">Design</div>
+                                    <div class="badge rounded-pill badge-anarish">Development</div>
+                                </div>
+                            </div>
+                            <div class="work-img mt-4">
+                                <img src="../../assets/img/main/web-dev-2.jpg" alt="Website Design and Development"
+                                    class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-b -->
+                    <div class="col-12 col-xl-4">
+                        <div class="card card-2 mobile-solution h-100">
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <img src="../../assets/img/main/mobile-card-2.svg" alt="Mobiole solution"
+                                        class="img-fluid">
+                                </div>
+                                <div class="col-6">
+                                    <img src="../../assets/img/main/mobile-card-1.svg" alt="Mobile solution "
+                                        class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="work-card ">
+                                <h3 class="work-heading"> <a routerLink="portfolio/5"> Mobile App Solutions </a></h3>
+                                <div class="work-desc">
+                                    <p>
+                                        Transform your business with our cutting-edge mobile solutions, Design &
+                                        Developed to enhance user experience and drive growth.
+                                    </p>
+                                </div>
+                                <div class="badges-wrapper d-flex gap-2 mb-4">
+                                    <div class="badge rounded-pill badge-anarish">Design</div>
+                                    <div class="badge rounded-pill badge-anarish">Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center view-btn">
+                    <a class="btn btn-link" routerLink='/portfolio/1'>
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="design-process theme-color-bg-blue">
+        <div class="container">
+            <div class="text-center">
+                <h2>
+                    Design Processes we follow!
+                </h2>
+                <p>
+                    A structured design process is essential for creating effective, user-centered solutions.
+                </p>
+            </div>
+            <div class="section-content mt-3 mt-xl-5">
+                <div class="row gy-2 gy-xl-4">
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57"
+                                    fill="none">
+                                    <path
+                                        d="M28.0002 9.61621C30.4755 9.61621 32.8495 10.5995 34.5998 12.3499C36.3502 14.1002 37.3335 16.4742 37.3335 18.9495C37.3335 21.4249 36.3502 23.7989 34.5998 25.5492C32.8495 27.2995 30.4755 28.2829 28.0002 28.2829C25.5248 28.2829 23.1508 27.2995 21.4005 25.5492C19.6502 23.7989 18.6668 21.4249 18.6668 18.9495C18.6668 16.4742 19.6502 14.1002 21.4005 12.3499C23.1508 10.5995 25.5248 9.61621 28.0002 9.61621ZM28.0002 32.9495C38.3135 32.9495 46.6668 37.1262 46.6668 42.2829V46.9495H9.3335V42.2829C9.3335 37.1262 17.6868 32.9495 28.0002 32.9495Z"
+                                        fill="#222222" />
+                                </svg>
+                                <h3 class="card-title">User Research & Benchmarking</h3>
+                                <p class="card-text">To understand the target audience, their needs, preferences, and
+                                    pain points.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57"
+                                    fill="none">
+                                    <path
+                                        d="M35.6752 21.2832H33.7502C32.8219 21.2832 31.9317 21.652 31.2753 22.3084C30.6189 22.9647 30.2502 23.855 30.2502 24.7832V31.7832C30.2502 33.6397 29.5127 35.4202 28.1999 36.733C26.8872 38.0457 25.1067 38.7832 23.2502 38.7832H21.3252C20.8915 40.9078 19.6844 42.7957 17.9379 44.0808C16.1914 45.366 14.0299 45.9569 11.8725 45.7389C9.7151 45.521 7.71546 44.5097 6.26128 42.9012C4.80709 41.2928 4.00195 39.2016 4.00195 37.0332C4.00195 34.8648 4.80709 32.7737 6.26128 31.1652C7.71546 29.5567 9.7151 28.5455 11.8725 28.3275C14.0299 28.1096 16.1914 28.7005 17.9379 29.9856C19.6844 31.2708 20.8915 33.1586 21.3252 35.2832H23.2502C24.1784 35.2832 25.0687 34.9145 25.725 34.2581C26.3814 33.6017 26.7502 32.7115 26.7502 31.7832V24.7832C26.7502 22.9267 27.4877 21.1462 28.8004 19.8335C30.1132 18.5207 31.8937 17.7832 33.7502 17.7832H35.6752C36.1088 15.6586 37.3159 13.7708 39.0624 12.4856C40.809 11.2005 42.9704 10.6096 45.1278 10.8275C47.2852 11.0455 49.2849 12.0567 50.7391 13.6652C52.1932 15.2737 52.9984 17.3648 52.9984 19.5332C52.9984 21.7016 52.1932 23.7928 50.7391 25.4012C49.2849 27.0097 47.2852 28.021 45.1278 28.2389C42.9704 28.4569 40.809 27.866 39.0624 26.5808C37.3159 25.2957 36.1088 23.4078 35.6752 21.2832Z"
+                                        fill="#222222" />
+                                </svg>
+                                <h3 class="card-title">Prototyping & Visual Design</h3>
+                                <p class="card-text">From Wireframes to  the graphical elements, typography, color
+                                    schemes & iconography.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57"
+                                    fill="none">
+                                    <path
+                                        d="M46.6668 14.2835C46.6668 9.22486 38.1198 4.9502 28.0002 4.9502C17.8805 4.9502 9.3335 9.22486 9.3335 14.2835V18.9502C9.3335 24.0089 17.8805 28.2835 28.0002 28.2835C38.1198 28.2835 46.6668 24.0089 46.6668 18.9502V14.2835ZM28.0002 44.6169C17.8805 44.6169 9.3335 40.3422 9.3335 35.2835V42.2835C9.3335 47.3422 17.8805 51.6169 28.0002 51.6169C38.1198 51.6169 46.6668 47.3422 46.6668 42.2835V35.2835C46.6668 40.3422 38.1198 44.6169 28.0002 44.6169Z"
+                                        fill="#222222" />
+                                    <path
+                                        d="M46.6668 23.6162C46.6668 28.6749 38.1198 32.9495 28.0002 32.9495C17.8805 32.9495 9.3335 28.6749 9.3335 23.6162V30.6162C9.3335 35.6749 17.8805 39.9495 28.0002 39.9495C38.1198 39.9495 46.6668 35.6749 46.6668 30.6162V23.6162Z"
+                                        fill="#222222" />
+                                </svg>
+                                <h3 class="card-title">Information Architecture</h3>
+                                <p class="card-text">Organizing and structuring the content and information to improve
+                                    its usability and findability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57"
+                                    fill="none">
+                                    <path
+                                        d="M9.33317 46.9495C8.04984 46.9495 6.95162 46.493 6.0385 45.5799C5.12539 44.6668 4.66806 43.5678 4.6665 42.2829V14.2829C4.6665 12.9995 5.12384 11.9013 6.0385 10.9882C6.95317 10.0751 8.05139 9.61777 9.33317 9.61621H46.6665C47.9498 9.61621 49.0488 10.0735 49.9635 10.9882C50.8782 11.9029 51.3347 13.0011 51.3332 14.2829V42.2829C51.3332 43.5662 50.8766 44.6652 49.9635 45.5799C49.0504 46.4945 47.9514 46.9511 46.6665 46.9495H9.33317ZM9.33317 42.2829H33.8332V34.1162H9.33317V42.2829ZM38.4998 42.2829H46.6665V21.2829H38.4998V42.2829ZM9.33317 29.4495H33.8332V21.2829H9.33317V29.4495Z"
+                                        fill="#222222" />
+                                </svg>
+                                <h3 class="card-title">Responsive Web & App Design</h3>
+                                <p class="card-text">Design that adapt & respond to different screen sizes and devices,
+                                    providing a consistent & optimized user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="57" viewBox="0 0 57 57"
+                                    fill="none">
+                                    <path
+                                        d="M16.8332 11.9495H40.1665V14.2829C40.1665 15.5662 41.2165 16.6162 42.4999 16.6162C43.7832 16.6162 44.8332 15.5662 44.8332 14.2829V7.28288C44.8332 4.71621 42.7332 2.63954 40.1665 2.63954L16.8332 2.61621C14.2665 2.61621 12.1665 4.71621 12.1665 7.28288V14.2829C12.1665 15.5662 13.2165 16.6162 14.4999 16.6162C15.7832 16.6162 16.8332 15.5662 16.8332 14.2829V11.9495ZM38.1132 37.3362L45.5099 29.9395C45.7262 29.7237 45.8978 29.4673 46.0149 29.185C46.132 28.9027 46.1922 28.6001 46.1922 28.2945C46.1922 27.989 46.132 27.6864 46.0149 27.4041C45.8978 27.1218 45.7262 26.8654 45.5099 26.6495L38.1132 19.2529C37.2032 18.3429 35.7099 18.3429 34.7999 19.2529C34.5836 19.4687 34.412 19.7251 34.2949 20.0074C34.1778 20.2897 34.1175 20.5923 34.1175 20.8979C34.1175 21.2035 34.1778 21.5061 34.2949 21.7883C34.412 22.0706 34.5836 22.327 34.7999 22.5429L40.5632 28.2829L34.7999 34.0462C34.5836 34.2621 34.412 34.5185 34.2949 34.8008C34.1778 35.083 34.1175 35.3856 34.1175 35.6912C34.1175 35.9968 34.1778 36.2994 34.2949 36.5817C34.412 36.8639 34.5836 37.1203 34.7999 37.3362C35.7099 38.2462 37.2032 38.2462 38.1132 37.3362ZM22.1765 34.0229L16.4365 28.2829L22.1765 22.5429C22.3929 22.327 22.5645 22.0706 22.6816 21.7883C22.7986 21.5061 22.8589 21.2035 22.8589 20.8979C22.8589 20.5923 22.7986 20.2897 22.6816 20.0074C22.5645 19.7251 22.3929 19.4687 22.1765 19.2529C21.2665 18.3429 19.7732 18.3429 18.8632 19.2529L11.4665 26.6495C11.2502 26.8654 11.0786 27.1218 10.9615 27.4041C10.8444 27.6864 10.7842 27.989 10.7842 28.2945C10.7842 28.6001 10.8444 28.9027 10.9615 29.185C11.0786 29.4673 11.2502 29.7237 11.4665 29.9395L18.8632 37.3362C19.7732 38.2462 21.2665 38.2462 22.1765 37.3362C23.1099 36.4262 23.0865 34.9329 22.1765 34.0229ZM40.1665 44.6162H16.8332V42.2829C16.8332 40.9995 15.7832 39.9495 14.4999 39.9495C13.2165 39.9495 12.1665 40.9995 12.1665 42.2829V49.2829C12.1665 51.8495 14.2665 53.9495 16.8332 53.9495H40.1665C42.7332 53.9495 44.8332 51.8495 44.8332 49.2829V42.2829C44.8332 40.9995 43.7832 39.9495 42.4999 39.9495C41.2165 39.9495 40.1665 40.9995 40.1665 42.2829V44.6162Z"
+                                        fill="#222222" />
+                                </svg>
+                                <h3 class="card-title">Development Handoff</h3>
+                                <p class="card-text">Providing detailed specifications and assets, foster close
+                                    collaboration, and ensure rigorous quality assurance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="56" height="57" viewBox="0 0 56 57"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1448_42887)">
+                                        <path
+                                            d="M44.3333 9.61621C45.571 9.61621 46.758 10.1079 47.6332 10.983C48.5083 11.8582 49 13.0452 49 14.2829V42.2829C49 43.5206 48.5083 44.7075 47.6332 45.5827C46.758 46.4579 45.571 46.9495 44.3333 46.9495H11.6667C10.429 46.9495 9.242 46.4579 8.36683 45.5827C7.49167 44.7075 7 43.5206 7 42.2829V14.2829C7 13.0452 7.49167 11.8582 8.36683 10.983C9.242 10.1079 10.429 9.61621 11.6667 9.61621H44.3333ZM44.3333 23.6162H11.6667V39.9495C11.6667 40.5211 11.8766 41.0727 12.2563 41.4997C12.6361 41.9268 13.1594 42.1997 13.727 42.2665L14 42.2829H42C42.5715 42.2828 43.1231 42.073 43.5502 41.6932C43.9773 41.3134 44.2501 40.7901 44.317 40.2225L44.3333 39.9495V23.6162ZM14 14.2829C13.3812 14.2829 12.7877 14.5287 12.3501 14.9663C11.9125 15.4039 11.6667 15.9974 11.6667 16.6162C11.6667 17.235 11.9125 17.8285 12.3501 18.2661C12.7877 18.7037 13.3812 18.9495 14 18.9495C14.6188 18.9495 15.2123 18.7037 15.6499 18.2661C16.0875 17.8285 16.3333 17.235 16.3333 16.6162C16.3333 15.9974 16.0875 15.4039 15.6499 14.9663C15.2123 14.5287 14.6188 14.2829 14 14.2829ZM21 14.2829C20.3812 14.2829 19.7877 14.5287 19.3501 14.9663C18.9125 15.4039 18.6667 15.9974 18.6667 16.6162C18.6667 17.235 18.9125 17.8285 19.3501 18.2661C19.7877 18.7037 20.3812 18.9495 21 18.9495C21.6188 18.9495 22.2123 18.7037 22.6499 18.2661C23.0875 17.8285 23.3333 17.235 23.3333 16.6162C23.3333 15.9974 23.0875 15.4039 22.6499 14.9663C22.2123 14.5287 21.6188 14.2829 21 14.2829ZM28 14.2829C27.3812 14.2829 26.7877 14.5287 26.3501 14.9663C25.9125 15.4039 25.6667 15.9974 25.6667 16.6162C25.6667 17.235 25.9125 17.8285 26.3501 18.2661C26.7877 18.7037 27.3812 18.9495 28 18.9495C28.6188 18.9495 29.2123 18.7037 29.6499 18.2661C30.0875 17.8285 30.3333 17.235 30.3333 16.6162C30.3333 15.9974 30.0875 15.4039 29.6499 14.9663C29.2123 14.5287 28.6188 14.2829 28 14.2829Z"
+                                            fill="#222222" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1448_42887">
+                                            <rect width="56" height="56" fill="white"
+                                                transform="translate(0 0.283203)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h3 class="card-title">Testing and Validation</h3>
+                                <p class="card-text">Design shall meet user needs and expectations through
+                                    usability, A/B testing, ensuring accessibility for all users</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2790" height="187" viewBox="250 393 2790 187" fill="none">
+                <path
+                    d="M0 0.829102H720C900 0.829102 1080 38.1164 1260 76.7292C1440 115.342 1620 155.28 1800 141.819C1980 128.358 2160 62.4982 2340 34.6344C2520 6.77058 2700 16.5236 2880 34.6344C3060 52.7452 3240 79.3975 3240 79.3975V580H0V0.829102Z"
+                    fill="#B1D8FD" transform="rotate(180 1620 290)" />
+            </svg>
+        </div>
+    </section>
+
+    <section class="pixcel-perfect">
+        <div class="container">
+            <div class="spacing text-center">
+                <h2>
+                    Design Fidelity
+                </h2>
+                <p>
+                    We ensure every design detail is precisely implemented, reflecting your vision in the final product.
+                </p>
+            </div>
+            <div class="section-content mt-2 mt-lg-0">
+                <div class="row gy-3">
+                    <div class="col-12 col-lg-6 col-height">
+                        <div class="pixcel-video">
+                            <div class="video-wrapper embed-responsive embed-responsive-16by9">
+                                <video playsinline id="my-video" loading="lazy" class="embed-responsive-item" autoplay muted loop>
+                                    <source src="assets/img/main/main-animation.mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex">
+                        <div class="what-we-provide d-flex flex-column">
+                            <ul class="list-unstyled d-flex flex-column flex-grow-1">
+                                <li class="mb-3">
+                                    <h3>Accessibility and Consistency</h3>
+                                    <p> Our development prioritizes accessibility, striving for consistency across all
+                                        browsers and adherence to WCAG 2.1 AA standards.</p>
+                                </li>
+                                <li class="mb-3">
+                                    <h3>Immersive Experience</h3>
+                                    <p>
+                                        We deliver an immersive and visually stunning user experience.
+                                    </p>
+                                </li>
+                                <li class="mb-3">
+                                    <h3>Solving Industry Challenges</h3>
+                                    <p> We address the critical industry pain point of design-to-development
+                                        discrepancies, ensuring complete design realization. </p>
+                                </li>
+                            </ul>
+                            <p class="flex-shrink-0 fw-semibold fst-italic">These points encapsulate our dedication to
+                                creating browser applications that are not only visually appealing but also functionally
+                                robust and accessible. </p>
+                        </div>
+                        <!-- <div class="pixcel-card">
+                            <h3 class="card-title">Bridging Design and Development for Seamless Browser Experiences</h3>
+                            <p class="description">When translating design into development for browser applications,
+                                our
+                                team meticulously implements every detail with precision, ensuring your vision is
+                                faithfully
+                                reflected. From layout to typography, colors to animations, we prioritize accessibility
+                                and
+                                strive for seamless consistency across all browsers. This approach guarantees an
+                                immersive
+                                and visually stunning user experience that is inclusive and accessible as per WCAG 2.1
+                                AA
+                                Compliant</p>
+                        </div>  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="powerpoint-design">
+        <div class="container">
+            <div class="text-center">
+                <h2>
+                    Pitch Perfect Decks
+                </h2>
+                <p>
+                    Your Vision, Our Presentation: Crafting A Success Story
+                </p>
+            </div>
+            <div class="section-content mt-3 mt-xl-5">
+                <div class="container">
+                    <div class="row mb-4">
+                        <div class="col-12 col-lg-6 order-lg-1 d-flex justify-content-center mt-3 mt-lg-0">
+                            <ul class="list-unstyled ">
+                                <li class="mb-3">
+                                    <div class="mt-2">
+                                        <div class="circle"> 1 </div>
+                                    </div>
+                                    <div class="d-flex flex-column w-100 justify-content-between">
+                                        <h3 class="mb-1">Company Profile Presentation</h3>
+                                        <p class="mb-1 description">We showcase your core strengths, notable
+                                            achievements and vision, captivating your audience with a concise,
+                                            professional narrative.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="mt-2">
+                                        <div class="circle"> 2 </div>
+                                    </div>
+                                    <div class="d-flex flex-column w-100 justify-content-between">
+                                        <h3 class="mb-1">Investor Pitch Decks</h3>
+                                        <p class="mb-1 description">Empower your startup's journey with our expertly
+                                            crafted pitch decks, designed to elevate your vision and captivate
+                                            investors.</p>
+                                    </div>
+                                </li>
+                                <li class="mb-3">
+                                    <div class="mt-2">
+                                        <div class="circle"> 3 </div>
+                                    </div>
+                                    <div class="d-flex flex-column w-100 justify-content-between">
+                                        <h3 class="mb-1">Interactive Demos</h3>
+                                        <p class="mb-1 description">Discover the dynamic potential of our interactive
+                                            Figma demos, tailored to provide a more engaging and immersive experience.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-12 offset-xl-1 col-xl-5 order-lg-2 m-auto d-flex justify-content-center">
+                            <div class="powerpoint-img">
+                                <picture>
+                                    <!-- <source srcset="assets/img/main/Powerpoint-service1.avif" type="image/avif"> -->
+                                    <img src="assets/img/main/Powerpoint-service1.webp" class="img-fluid"
+                                        alt="powerpoint-service">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="text-center h-spacing">
+                <h2>
+                    Companies we work with
+                </h2>
+                <p>
+                    Transforming Vision into Reality with Leading Companies
+                </p>
+            </div>
+            <div class="section-content">
+                <div class="companies-logo">
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-xl-3"><img src="assets/img/main/logos/mobilise.png"
+                                alt="mobilise-logo" class="cm-logo img-fluid"></div>
+                        <div class="col-6 col-md-4 col-xl-3"><img src="assets/img/main/logos/genpact-u.png"
+                                alt="genpect-logo" class="cm-logo img-fluid"></div>
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/iotay-u.png"
+                                alt="iotay-logo" class="cm-logo img-fluid"></div>
+                        <div class="col-6 col-md-4 col-xl-3"><img src="assets/img/main/logos/rentickle-u.png"
+                                style="scale: 1.5;" alt="rentikle-logo" class="cm-logo" class="img-fluid"></div>
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/awc.png" alt="awc-logo"
+                                class="cm-logo img-fluid">
+                        </div>
+
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/function-apps.png" alt="function-app-logo"
+                                class="cm-logo-sm img-fluid">
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/stem-u.png" alt="stem-logo"
+                                class="cm-logo img-fluid">
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3"><img src="assets/img/main/logos/path-u.png" alt="path-logo"
+                                class="cm-logo img-fluid"></div>
+                        <div class="col-6 col-md-4 col-xl-3">
+                            <img src="assets/img/main/logos/compro-u.png" alt="compro-logo" class="cm-logo img-fluid">
+                        </div>
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/oakter.png" alt="oakter-logo"
+                                class="cm-logo-sm img-fluid">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="testimonial">
+                    <div class="carousel">
+                        <div class="slide-containers containers">
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="image-content">
+                                                <div class="card-image">
+                                                    <img src="../../assets/img/main/ashish-sharma.jpg" alt="Mobilise-Founder"
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-d d-flex flex-column justify-content-center">
+                                                    <h3 class="card-title">Ashish Sharma</h3>
+                                                    <p class="card-subtitle">Founder - Mobilise Privated Limited</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-content">
+
+                                                <p class="description">Team Anarish is a design powerhouse! Their work
+                                                    exceeded our
+                                                    expectations,
+                                                    and they were completely involved until the final execution!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="image-content">
+                                                <div class="card-image">
+                                                    <img src="../../assets/img/main/nitin-gambhir.jpg" alt="stem-center-Founder"
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-d d-flex flex-column justify-content-center">
+                                                    <h3 class="card-title">Nitin Gambhir</h3>
+                                                    <p class="card-subtitle">Founding Partner - Stem Center ACE</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-content">
+                                                <p class="description">Team Anarish is simply exceptional! Their
+                                                    expertise in UI/UX design transformed our project into a
+                                                    user-friendly masterpiece.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card">
+                                            <div class="image-content">
+                                                <div class="card-image">
+                                                    <img src="../../assets/img/main/sudhanshu-jain.jpg" alt="vp-Teon-Facility-Management"
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-d d-flex flex-column justify-content-center">
+                                                    <h3 class="card-title">Sudhanshu Jain</h3>
+                                                    <p class="card-subtitle">VP - Tenon Facility Management</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-content">
+                                                <p class="description">
+                                                    Working with Anarish Innovations was a breeze! Their design skills
+                                                    and attention to detail made our project shine. They stayed
+                                                    dedicated till the end.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

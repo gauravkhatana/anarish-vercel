@@ -1,0 +1,308 @@
+@import "../root-portfolio/root-portfolio.component.scss";
+@import '../../bootstrap-imports';
+
+.masthead {
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  @include media-breakpoint-up(xl) {
+    padding: 6rem 0;
+  }
+  .background-img {
+    position: absolute;
+    left: 36%;
+    top: 0%;
+    z-index: 1;
+    fill: rgba(255, 207, 36, 0.20);
+  }
+}
+.card {
+  --bs-card-bg: #fffbf4;
+}
+section {
+  &.website-features {
+    .section-content {
+      .row {
+        .card-1 {
+          background-color: #FFF0D9;
+          display: flex;
+          height: 100%;
+          flex-direction: column;
+          gap: 16px;
+          justify-content: center;
+          border-radius: 1rem;
+          padding: 2.5rem 1.5rem;
+          .brand-essence-list {
+            line-height: 1.5;
+          }
+
+          .feature-heading {
+            color: var(--Primary, #1D2130);
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.4;
+
+            @include media-breakpoint-up(lg) {
+              font-size: 24px;
+              font-weight: 600;
+              line-height: 1.5;
+            }
+          }
+
+          .feature-desc {
+            color: var(--Primary, #1D2130);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.7;
+            &.brand-desc {
+              line-height: 1.4;
+              font-weight: 600;
+            }
+            @include media-breakpoint-up(lg) {
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 1.8;
+            }
+          }
+        }
+
+        .card-2 {
+          .images {
+            height: 100%;
+            overflow: hidden;
+            background-color: white;
+            white-space: nowrap;
+
+            .images-slide {
+              height: 100%;
+              display: inline-block; 
+              animation: slider 30s infinite linear;
+
+
+              img {
+                width: auto;
+                height: 100%;
+                max-height: inherit;
+                margin:  0 5px;
+              }
+
+            }
+          }
+
+          @keyframes slider {
+            from {
+              transform: translate(0);
+            }
+
+            to {
+              transform: translate(-100%);
+            }
+          }
+
+          background-color: #B1D8FD;
+          height: 100%;
+          align-items: center;
+          width: 100%;
+          justify-content: center;
+          border-radius: 1rem;
+          padding: 2.5rem 1.5rem;
+
+
+          .feature-img {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: 100%;
+              border-radius: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .tab-pane {
+      transition: opacity 0.3s ease;
+      /* Customize transition duration and easing as needed */
+    }
+
+    .tab-pane.fade {
+      border: none !important;
+      opacity: 0;
+    }
+    .tab-pane.fade.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .card {
+      border: none;
+      .card-header {
+        border-bottom: solid 4px var(--bs-card-border-color);
+      }
+      .nav-item {
+        border: none !important;
+        font-weight: 600;
+      }
+
+      .nav-link {
+        border: transparent;
+        color: #737373;
+      }
+      .active {
+        background-color: transparent;
+        color: #000;
+        border-bottom: solid 3px #000;
+      }
+    }
+  }
+
+  .cases-tab-wrap {
+    padding-bottom: 0;
+    position: relative;
+    margin: 0 auto;
+
+    .cases-accordion {
+      padding-top: 2.5rem;
+      background-color: transparent;
+    }
+
+    .cases-tabs {
+      display: flex;
+      align-items: center;
+      display: none;
+      border-bottom: none;
+
+      >.nav-link {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        color: var(--purple-dark);
+        padding: 1rem 40px;
+
+        &.active {
+          &:hover {
+            color: #fff !important;
+          }
+        }
+      }
+
+
+      .tab-pane {
+        transition: opacity 0.3s ease;
+
+        &.fade {
+          border: none !important;
+          opacity: 0;
+          visibility: hidden;
+
+          &.show {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+
+      .nav-item {
+        border: none !important;
+        font-weight: 600;
+
+        .nav-link {
+          cursor: pointer;
+          border: transparent;
+          color: #737373;
+          font-size: 18px;
+          font-weight: 600;
+          border-radius: 16px 16px 0 0;
+
+          &.active {
+            background-color: transparent;
+            color: #000;
+            border-bottom: solid 3px #000;
+          }
+
+          span {
+            font-size: 15px;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .cases-tabs {
+        border-bottom: solid 1px grey;
+        display: flex; 
+        align-items: center;
+        justify-content: center;  
+        gap: 1.5rem;  
+        padding-top: 1rem;    
+      }  
+  
+      .card {   
+        border: 0 none;
+        box-shadow: none;
+ 
+        .card-header {  
+          display: none !important;
+        } 
+
+        .card-body {
+          padding: 0;
+          line-height: 1.2;
+        }
+
+        .collapse.display {
+          display: block;
+        }
+      }
+    }
+
+    @media(max-width:991px) {
+      .tab-content>.tab-pane {
+        display: block !important;
+        opacity: 1;
+        margin-bottom: 10px;
+        border: 0 none;
+        box-shadow: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .card-header {
+        background-color: #fffbf4;
+        display: flex;
+        justify-content: space-between;
+
+
+
+
+        span {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+ 
+ 
+
+        i {  
+          padding-top: 5px; 
+          text-decoration: none !important;  
+        } 
+      }    
+
+      .card-header[aria-expanded="true"] .fa-plus:before {  
+        content: "\f068";
+      }  
+  
+
+    } 
+  }
+  .next-portfolio {
+    background-image: url(../../assets/img/portfolio/web-dev/next-web-dev.avif);
+  }
+}

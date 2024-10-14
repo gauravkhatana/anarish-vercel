@@ -1,0 +1,36 @@
+@import '../../bootstrap-imports';
+@import "../root-portfolio/root-portfolio.component.scss";
+
+.masthead {
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #C4B1F9;
+  @include media-breakpoint-up(xl) {
+    padding: 6rem 0;
+  }
+
+  .background-img {
+    position: absolute; 
+    left: 36%;
+    top: -10%; 
+    z-index: 1;  
+    fill: #8468D1;
+  } 
+}
+  
+section {  
+  &.supported-modules {  
+    color:#121212;
+    p {
+      line-height: 1.6; 
+    }
+    video { 
+      max-width: 71%;
+    }
+  }
+ 
+  .next-portfolio {
+    background-image: url(../../assets/img/portfolio/crms/next-hrms.png);
+  }
+} 

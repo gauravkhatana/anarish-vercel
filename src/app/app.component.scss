@@ -1,0 +1,108 @@
+@import "../bootstrap-imports";
+
+
+.modal{
+    .modal-dialog{
+        max-width: 40em;
+        height: 80%; 
+    .modal-content{
+        border-top: solid slateblue 10px;
+
+        .modal-header{
+            border-bottom : none;
+            padding-bottom: 0;
+            .btn-close{
+                align-self: flex-start;
+            }
+        }   
+        .modal-body{   
+            padding: 2.5rem; 
+            padding-top: 1rem;
+
+            h2{
+                margin-bottom: 16px;
+                line-height: 1.4;
+            }
+            p{
+                margin-bottom: 16px;
+                line-height: 1.4;
+                letter-spacing: 0.3px;
+
+            }
+
+        }
+
+    }
+}
+}
+
+#liveToastBtn,
+#liveToast {
+    z-index: 1000;
+}
+
+#liveToastBtn {
+    border-radius: 2rem;
+    right: 1rem;
+    bottom: 1rem;
+    color: transparent;
+    height: 40px;
+    width: 150px;
+    box-shadow: 0 0 20px 6px #eee;      
+
+    img {
+        padding: 0;
+        width: 100%;
+        position: absolute;
+        left: 0.5px;
+        top: -2px;
+    }
+}
+
+.toast-container {
+    padding: 1rem;
+    z-index: 1000;
+
+    @include media-breakpoint-up(md) {
+        padding: 1.5rem;
+    }
+
+    .btn-close {
+        scale: 0.8;
+        position: relative;
+        right: 8px;
+        top: 8px;
+
+        &:focus {
+            box-shadow: none;
+            border: 0;
+        }
+    }
+
+
+    #liveToast {
+        max-width: 300px;
+        background-color: #eee;
+        border-radius: 18px;
+        overflow: hidden;
+
+
+        .toast-body {
+
+            p {
+                font-size: 0.8rem;
+                cursor: pointer;
+            }
+
+            button {
+                border: solid #121212 1px;
+
+                a {
+                    text-decoration: none;
+                    color: #121212;
+                }
+            }
+        }
+
+    }
+}

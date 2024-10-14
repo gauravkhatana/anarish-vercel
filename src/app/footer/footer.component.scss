@@ -1,0 +1,53 @@
+.footer {
+  background: #121212;
+  box-shadow: 0px -4px 11px 0px rgba(0, 0, 0, 0.05);
+  color:#fff;
+  p {
+    margin-bottom: 1rem;  
+    .btn-link {  
+      color: #fff;
+      font-size: 16px;
+      line-height : 1.6;
+      border-color: #fff;
+  
+    }
+  }
+  .conversation {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+  line-height : 1.4; 
+  }
+
+  .email {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+   line-height : 1.4;
+
+  }
+
+  .address {
+    color: #fff;
+    font-size: 14px;
+    line-height : 1.4;
+  }
+
+  .condition {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .flex-styles {
+    flex: 3;
+  }
+
+  .flex-style {
+    flex: 1;
+  } 
+  svg{
+    fill: #fff;  
+  }
+}  

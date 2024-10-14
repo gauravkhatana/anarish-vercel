@@ -1,0 +1,81 @@
+@import "../../bootstrap-imports.scss";
+
+.masthead { 
+  position: relative;
+  overflow: hidden;
+  background: #dbeeff; 
+  @include media-breakpoint-up(xl) {
+    padding-top: 6rem;  
+  }
+  .img-wrapper {
+    aspect-ratio: 538/305;
+    z-index: 2; 
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    max-height: 540px;
+    img {
+      height: 100%;
+      width: auto;
+      z-index: 2; 
+    }
+  }
+  .heading {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+    padding-bottom: 12px;
+    border-bottom: solid 2px #000;
+    width: fit-content;
+    
+  }
+}
+section {
+  &.benefits {
+    h2 {
+      font-weight: 600;
+    }
+    .card {
+      padding: 20px;
+      height: 100%; 
+      gap: 20px;
+      border: none;
+      box-shadow: 5PX 5PX 10PX rgba(128, 128, 128, 0.407);
+      .card-body{
+        padding: 0;
+      }
+      h5 {
+       padding-bottom: 1.5rem; 
+       font-weight: 600;
+      }
+    }
+  }
+  &.team {
+    padding: 6rem 0;
+    background-image: url(../../assets/img/portfolio/web-dev/next-web-dev.avif);
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    background-size: cover; 
+    min-height: 250px; 
+    text-align: center;
+    @include media-breakpoint-up(xl) {
+      padding: 3rem 0;  
+    } 
+
+    h2 {
+      color:#fff;
+      margin-bottom: 24px;
+    }
+    .description {
+      color:#fff;
+      max-width: 99%;
+      margin-left: auto;
+      margin-right: auto; 
+      @include media-breakpoint-up(xl) {
+        max-width: 60%;  
+        font-size: 20px;
+      }
+    }
+  }
+}

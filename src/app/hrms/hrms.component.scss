@@ -1,0 +1,83 @@
+@import "../root-portfolio/root-portfolio.component.scss";
+
+.masthead {
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+  background: #FFE27C;   
+
+  @include media-breakpoint-up(xl) {
+    padding: 6rem 0;
+  }
+  .background-img {
+    position: absolute;
+    left: 36%;
+    top: 0%;
+    z-index: 1;
+    fill: #FFCF24;
+  }
+}
+
+section {
+  &.supported-features {
+    color:#121212;
+    p {
+      line-height: 1.6;
+    }   
+  }
+
+  .portfilo-card {
+    padding: 40px;
+    border-radius: 16px;
+    h3 {
+      color: var(--Primary, #121212);
+      font-size: 30px; 
+      font-weight: 600;
+      line-height: 1.4;
+    }
+    p {
+      color: #121212;
+      font-size: 18px; 
+      line-height: 1.4;
+    }
+    
+    @include media-breakpoint-up(lg) {
+      img {
+        margin: 40px 40px 20px;
+      }
+    }
+  }
+  .next-portfolio {
+    background-image: url(../../assets/img/portfolio/hrms/next-hrms.avif);
+  }
+}
+.incremental {
+  background-color: #C7E2FE;
+
+  img {
+    z-index: 3;
+  }
+  .img1,
+  .img2 {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+  }
+  .img1 {
+    top: 0%;
+  }
+  .img1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    z-index: -1;
+    background-color: #FFE27C;
+    transform: rotate(2.5deg);
+  }
+}     
