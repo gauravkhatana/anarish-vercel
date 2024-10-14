@@ -7,16 +7,23 @@
         height: 80%; 
     .modal-content{
         border-top: solid slateblue 10px;
+        padding: 1.5rem; 
 
         .modal-header{
+            position: static;
             border-bottom : none;
             padding-bottom: 0;
+            h1{
+                width: 80%;
+            }    
             .btn-close{
-                align-self: flex-start;
+                // align-self: flex-start;
+                position : relative;
+                top : -8px
             }
         }   
         .modal-body{   
-            padding: 2.5rem; 
+           
             padding-top: 1rem;
 
             h2{
@@ -92,6 +99,7 @@
             p {
                 font-size: 0.8rem;
                 cursor: pointer;
+                padding: 4px 2px;
             }
 
             button {
