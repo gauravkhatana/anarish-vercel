@@ -593,6 +593,10 @@
     .swiper-slide {
         font-size: 18px;
         width: 60%;
+        height: auto;
+        // @include media-breakpoint-up(md){
+        //     height: 17em;
+        // }
 
         &.swiper-slide-active {
             .card {
@@ -606,6 +610,7 @@
         }
 
         .card {
+            height: 100%;
             border-radius: 2rem;
             background-color: #FFF;
             display: flex;
