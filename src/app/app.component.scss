@@ -30,7 +30,7 @@
             .modal-header {
                 position: relative;
                 border-bottom: none;
-                padding: 0;
+                padding: 12px 0;
                 
                 height: 0;
 
@@ -41,10 +41,11 @@
                 .btn-close {
                     // align-self: flex-start;
                     position: absolute;
-                    top: 12px;
-                    right: 9px;
+                    top: 16px;
+                    right: 16px;
                     scale: 0.8;
                     z-index: 100;
+                    padding: 0;
                 }
             }
 
@@ -106,13 +107,14 @@
 
 
     #liveToast {
-        max-width: 200px;
+        max-width: 250px;
         max-height: 200px;
         background-color: #eee;
         border-radius: 18px;
         overflow: hidden;
 
         .toast-header {
+            padding-left: 0;
             img {
                 max-width: 90%;
             }
