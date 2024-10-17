@@ -1,46 +1,73 @@
 @import "../bootstrap-imports";
 
 
-.modal{
-    .modal-dialog{
-        max-width: 40em;
-        height: 80%; 
-    .modal-content{
-        border-top: solid slateblue 10px;
-        padding: 1.5rem; 
+.modal {
 
-        .modal-header{
-            position: static;
-            border-bottom : none;
-            padding-bottom: 0;
-            h1{
-                width: 80%;
-            }    
-            .btn-close{
-                // align-self: flex-start;
-                position : relative;
-                top : -8px
-            }
-        }   
-        .modal-body{   
-           
-            padding-top: 1rem;
-
-            h2{
-                margin-bottom: 16px;
-                line-height: 1.4;
-            }
-            p{
-                margin-bottom: 16px;
-                line-height: 1.4;
-                letter-spacing: 0.3px;
-
-            }
-
-        }
+    p {
+        font-size: 13px;
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+        margin-bottom: 16px;
 
     }
-}
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 3px;
+        line-height: 1.4;
+
+
+    }
+
+    .modal-dialog {
+        max-width: 40em;
+        height: 80%;
+
+        .modal-content {
+            border-top: solid slateblue 10px;
+
+
+            .modal-header {
+                position: relative;
+                border-bottom: none;
+                padding: 0;
+                
+                height: 0;
+
+                h1 {
+                    width: 80%;
+                }
+
+                .btn-close {
+                    // align-self: flex-start;
+                    position: absolute;
+                    top: 12px;
+                    right: 9px;
+                    scale: 0.8;
+                    z-index: 100;
+                }
+            }
+
+            .modal-body {
+                padding-right: 1.5rem;
+
+                ul {
+                    margin-bottom: 16px;
+
+                    li {
+                        font-size: 13px;
+                        line-height: 1.4;
+                        letter-spacing: 0.3px;
+
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
 }
 
 #liveToastBtn,
@@ -55,7 +82,8 @@
     color: transparent;
     height: 40px;
     width: 150px;
-    box-shadow: 0 0 8px 5px #1212123d;;      
+    box-shadow: 0 0 8px 5px #1212123d;
+    ;
 
     img {
         padding: 0;
@@ -74,18 +102,7 @@
         padding: 1.5rem;
     }
 
-    .btn-close {
-        scale: 0.8;
-        position: relative;
-        padding: 0;
-        right: 6px;
-        top: 4px;
 
-        &:focus {
-            box-shadow: none;
-            border: 0;
-        }
-    }
 
 
     #liveToast {
@@ -94,6 +111,26 @@
         background-color: #eee;
         border-radius: 18px;
         overflow: hidden;
+
+        .toast-header {
+            img {
+                max-width: 90%;
+            }
+
+            .btn-close {
+                scale: 0.8;
+                position: absolute;
+                padding: 0;
+                right: 16px;
+                top: 13px;
+
+                &:focus {
+                    box-shadow: none;
+                    border: 0;
+                }
+            }
+
+        }
 
 
         .toast-body {
@@ -105,12 +142,14 @@
             p {
                 font-size: 0.8rem;
                 cursor: pointer;
+                text-decoration: underline;
             }
 
             button {
                 border: solid #121212 1px;
                 margin: 4px;
                 font-size: small;
+
                 a {
                     text-decoration: none;
                     color: #121212;
