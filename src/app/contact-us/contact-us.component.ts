@@ -17,7 +17,7 @@ export class ContactUsComponent {
   submitted: boolean = false;
   submissionSuccess = false;
   isLoading: boolean = false;
-  querySubmited : boolean = false;
+  
 
   userData: UserData = {
     name: '',
@@ -41,13 +41,16 @@ export class ContactUsComponent {
 
 
   ngOnInit() {
-    this.globalState.state$.subscribe(state => {
-      this.querySubmited = state;
-    });
+  
   }
 
   updateState() {
-    this.globalState.setState({ stateSubject: false });
+    this.globalState.setState({ stateSubject: true });
+
+    // this.globalState.state$.subscribe(state => {
+    //   console.log("state changed :", state);
+    // });
+
   }
 
   onChange(intrest: any): void {
@@ -76,6 +79,7 @@ export class ContactUsComponent {
       this.appService.saveData(this.userData).subscribe(
         (data) => {
           console.log(data, ' : saved successfully');
+          this.updateState();
           this.submissionSuccess = true;
           this.isLoading = false;
           this.submitted = false;
@@ -85,7 +89,7 @@ export class ContactUsComponent {
           }, 5000);
         },
         (error) => {
-          console.error(error);
+          console.error('ERROR IN SAVING QUERY',error);
           this.isLoading = false;
           this.submitted = false;
         }

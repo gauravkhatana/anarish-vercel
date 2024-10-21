@@ -91,10 +91,7 @@
     }
 }
 
-#liveToastBtn,
-#liveToast {
-    z-index: 1000;
-}
+
 
 #liveToastBtn {
     border-radius: 2rem;
@@ -104,7 +101,7 @@
     height: 40px;
     width: 150px;
     box-shadow: 0 0 8px 5px #1212123d;
-    ;
+    z-index: 999;
 
     img {
         padding: 0;
@@ -127,6 +124,7 @@
 
 
     #liveToast {
+        z-index: 1001;
         max-width: 250px;
         max-height: 200px;
         background-color: #eee;

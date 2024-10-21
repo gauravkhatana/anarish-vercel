@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
+import { GlobalStateService } from './global-state.service';
 
 declare var bootstrap: any; // Declaring Bootstrap for use in TypeScript
 
@@ -11,13 +12,24 @@ declare var bootstrap: any; // Declaring Bootstrap for use in TypeScript
 export class AppComponent {
   title = 'Anarish Innovations';
   isEmpty: boolean = false;
+  querySubmited: boolean = false;
 
   tabs = ['services', 'portfolio', 'beliefs', 'recommendations', 'contact us'];
   private toast: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private globalState:GlobalStateService) {}
 
   ngOnInit(): void {
+
+    this.globalState.setState({ stateSubject: false });
+    
+    this.globalState.state$.subscribe(state => {
+      console.log(state);
+      this.querySubmited = state.stateSubject;
+      console.log(this.querySubmited,"in app component");
+    });
+    
+
     const toastElement = document.getElementById('liveToast') as HTMLElement;
 
     // Get the button and toast elements
