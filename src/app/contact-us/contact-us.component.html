@@ -32,7 +32,7 @@
                     <div class="row mb-4">
                         <div class="col-12 check-items ">
                             <p class="" *ngFor="let intrest of intrests">
-                                <button type="button" (click)="onChange(intrest)" [class.active]="intrest.value"
+                                <button type="button" (click)="onChange(intrest)" [class.active]="!intrest.value"
                                     class="badge rounded-pill badge-anarish me-2" [id]="intrest.id">
                                     {{intrest.option}}
                                     <svg [class.d-none]="!intrest.value" xmlns="http://www.w3.org/2000/svg" width="14"
