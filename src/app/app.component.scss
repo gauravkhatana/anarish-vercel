@@ -12,10 +12,10 @@
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 3px;
         line-height: 1.4;
-
+        font-weight: 600;
 
     }
 
@@ -24,26 +24,23 @@
         height: 80%;
 
         .modal-content {
-            border-top: solid slateblue 10px;
-
 
             .modal-header {
                 position: relative;
                 border-bottom: none;
-                padding: 12px 0;
-                
-                height: 0;
+                padding: 12px;
 
                 h1 {
                     width: 80%;
+                    font-weight: 500;
                 }
 
                 .btn-close {
                     // align-self: flex-start;
                     position: absolute;
-                    top: 16px;
-                    right: 16px;
-                    scale: 0.8;
+                    top: 22px;
+                    right: 22px;
+                    scale: 1.1;
                     z-index: 100;
                     padding: 0;
                 }
@@ -51,14 +48,17 @@
 
             .modal-body {
                 padding-right: 1.5rem;
+                padding-top: 0;
 
                 ul {
                     margin-bottom: 16px;
+                    list-style-type: circle;
 
                     li {
                         font-size: 13px;
                         line-height: 1.4;
                         letter-spacing: 0.3px;
+                        margin-bottom: 6px;
 
                     }
                 }
@@ -66,6 +66,26 @@
 
             }
 
+            .modal-footer{
+                border: 0;
+                // padding-top: 8px;
+                // padding-bottom: 8px;
+                justify-content: center;
+                box-shadow: 0 0 2px 0px var(--bs-modal-footer-border-color);
+
+                .btn{
+                    --bs-btn-padding-x: 24px;
+                    font-size: 14px;
+                    &:hover{
+                        border: solid 1px #121212;
+                    }
+                    &:active,&:focus-visible{
+                        border: solid 1px #121212;
+                        background: #121212;
+                        box-shadow: none;
+                    }
+                }
+            }
 
         }
     }
@@ -114,17 +134,18 @@
         overflow: hidden;
 
         .toast-header {
-            padding-left: 0;
+            padding: 1rem 0 4px;
+
             img {
-                max-width: 90%;
+                max-width: 80%;
             }
 
             .btn-close {
-                scale: 0.8;
+                scale: 1.1; 
                 position: absolute;
                 padding: 0;
-                right: 16px;
-                top: 13px;
+                right: 18px;
+                top: 8px;
 
                 &:focus {
                     box-shadow: none;
@@ -139,17 +160,21 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0 0.75rem 0.75rem;
+            padding: 4px 24px;
+            margin-bottom: 8px;
 
             p {
                 font-size: 0.8rem;
                 cursor: pointer;
                 text-decoration: underline;
+                // padding: 4px 24px;
             }
 
             button {
                 border: solid #121212 1px;
                 margin: 4px;
+                padding: 6px 24px;
+                
                 font-size: small;
 
                 a {

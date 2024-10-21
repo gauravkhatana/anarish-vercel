@@ -4,6 +4,7 @@ import { UserData } from '../models/Users';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { DatePipe } from '@angular/common';
+import { GlobalStateService } from '../global-state.service';
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -16,6 +17,7 @@ export class ContactUsComponent {
   submitted: boolean = false;
   submissionSuccess = false;
   isLoading: boolean = false;
+  querySubmited : boolean = false;
 
   userData: UserData = {
     name: '',
@@ -35,9 +37,18 @@ export class ContactUsComponent {
     { id: 7, option: 'React Js', value: false },
   ];
 
-  constructor(private appService: AppService, private datePipe: DatePipe) {}
+  constructor(private appService: AppService, private globalState:GlobalStateService, private datePipe: DatePipe) {}
 
-  ngOnInit(): void {}
+
+  ngOnInit() {
+    this.globalState.state$.subscribe(state => {
+      this.querySubmited = state;
+    });
+  }
+
+  updateState() {
+    this.globalState.setState({ stateSubject: false });
+  }
 
   onChange(intrest: any): void {
     intrest.value = !intrest.value;

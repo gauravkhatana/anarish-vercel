@@ -5,15 +5,14 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    
+
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <!-- <h1>
                         Unlock a 15-Day Free Trial of Our Cutting-Edge UI/UX Services!
                     </h1> -->
-                    <h1 class="fs-4" id="exampleModalLabel">Unlock a 15-Day Free Trial of Our Cutting-Edge UI/UX
-                        Services!</h1>
+                    <h1 class="fs-4" id="exampleModalLabel">15-Day Free Trial of Our UI/UX Services!</h1>
                     <p class="">
                         Are you ready to revolutionize the way your users interact with technology? At AIPL (Anarish
                         Innovations Private Limited), we specialize in creating exceptional user experiences through
@@ -22,18 +21,20 @@
                         and drive results in the digital landscape.
                     </p>
 
-                    <h2 class="fw-bold">
+                    <h2 class="">
                         Why Choose Us?
                     </h2>
                     <ul class="">
                         <li>
 
-                            Human-Centered Approach: We prioritize the needs, preferences, and pain points of your target
+                            Human-Centered Approach: We prioritize the needs, preferences, and pain points of your
+                            target
                             audience to create designs that resonate.
                         </li>
                         <li>
 
-                            Creativity & Innovation: Our team of experts brings fresh ideas and cutting-edge solutions to
+                            Creativity & Innovation: Our team of experts brings fresh ideas and cutting-edge solutions
+                            to
                             every project.
                         </li>
                         <li>
@@ -43,11 +44,12 @@
                         </li>
                         <li>
 
-                            Collaboration & Partnership: We work closely with you to ensure that our solutions align with
+                            Collaboration & Partnership: We work closely with you to ensure that our solutions align
+                            with
                             your business goals.
                         </li>
                     </ul>
-                    <h2 class="fw-bold">
+                    <h2 class="">
                         What’s Included in the Free Trial?
                     </h2>
                     <ul class="">
@@ -64,20 +66,21 @@
                             Usability testing and feedback sessions
                         </li>
                     </ul>
-                    <h2 class="fw-bold">
+                    <h2 class="">
                         Terms and Conditions:
                     </h2>
                     <ul class="">
 
                         <li>
-                            The 15-day free trial is available to new clients only. 
+                            The 15-day free trial is available to new clients only.
                         </li>
                         <li>
-                            The trial period begins on the date of sign-up and lasts for 15 consecutive days. 
+                            The trial period begins on the date of sign-up and lasts for 15 consecutive days.
                         </li>
                         <li>
                             During the trial period, clients will have access to a limited set of features and services.
-                            At the end of the trial period, clients may choose to continue with our services by selecting
+                            At the end of the trial period, clients may choose to continue with our services by
+                            selecting
                             one of our paid plans.
                         </li>
                         <li>
@@ -90,17 +93,27 @@
                         </li>
 
                     </ul>
-                        <p>
-                            By signing up for the free trial, clients agree to comply with all terms and conditions set
-                            forth by AIPL.
-                        </p>
 
                     <p class="">
-                        <span class="fw-bold">Ready to Get Started? </span> Sign up today and discover how our UI/UX
-                        services
-                        can transform your digital presence. Don’t miss out on this exclusive opportunity to elevate
-                        your user experience!
+                        Sign up today and discover how our UI/UX services can transform your digital presence. Don’t
+                        miss out on this exclusive opportunity to elevate your user experience!
+                        <span class="d-inline-block">
+                            By signing up for the free trial, clients agree to comply with all terms and conditions set
+                            forth by AIPL.
+                        </span>
                     </p>
+                    <!-- <h2 class="text-center">
+                        <button class="btn btn-primary" routerLink="contact-us" data-bs-dismiss="modal">
+                            Ready to Get Started?
+                        </button>
+                    </h2> -->
+                </div>
+                <div class="modal-footer">
+                    <h2 class="text-center">
+                        <button class="btn btn-primary" (click)="dismissToast()" data-bs-dismiss="modal" routerLink="contact-us" >
+                            Send your query now!
+                        </button>
+                    </h2>
                 </div>
 
             </div>
@@ -121,7 +134,7 @@
             <div class="toast-body bg-transparent">
                 <button class="btn" data-bs-dismiss="toast"><a routerLink="contact-us" class="">Send your Query</a>
                 </button>
-                <p class="fw-lighter" data-bs-toggle="modal" data-bs-target="#exampleModal">Terms & Conditions </p>
+                <p class="" data-bs-toggle="modal" data-bs-target="#exampleModal">Terms & Conditions </p>
             </div>
         </div>
     </div>

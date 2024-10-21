@@ -13,9 +13,13 @@ export class AppComponent {
   isEmpty: boolean = false;
 
   tabs = ['services', 'portfolio', 'beliefs', 'recommendations', 'contact us'];
+  private toast: any;
+
   constructor(private router: Router) {}
 
   ngOnInit(): void {
+    const toastElement = document.getElementById('liveToast') as HTMLElement;
+
     // Get the button and toast elements
     const toastTrigger = document.getElementById('liveToastBtn');
     const toastLiveExample = document.getElementById('liveToast');
@@ -23,14 +27,20 @@ export class AppComponent {
     // Check if both button and toast are found
     if (toastTrigger && toastLiveExample) {
       // Set toast options, including delay for display time
-      const toast = new bootstrap.Toast(toastLiveExample, {
-        delay: 60000 // 60 seconds
+      this.toast = new bootstrap.Toast(toastLiveExample, {
+        delay: 60000, // 60 seconds
       });
 
       // Attach click event listener to show toast
       toastTrigger.addEventListener('click', () => {
-        toast.show();
+        this.toast.show();
       });
+    }
+  }
+
+  dismissToast() {
+    if (this.toast) {
+      this.toast.hide();
     }
   }
 
