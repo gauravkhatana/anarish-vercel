@@ -95,10 +95,10 @@ export class ContactUsComponent {
         }
       );
 
-      this.appService.sendMail(this.userData).subscribe(
-        (data) => console.log(data),
-        (error) => console.error(error)
-      );
+      // this.appService.sendMail(this.userData).subscribe(
+      //   (data) => console.log(data),
+      //   (error) => console.error(error)
+      // );
 
       form.reset();
       this.submitted = false;

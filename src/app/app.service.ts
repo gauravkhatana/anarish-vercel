@@ -17,12 +17,12 @@ export class AppService {
         catchError(this.handleError)
       );
   }
-  sendMail(userData:UserData): Observable<UserData> {
-    return this.http.post<any>('https://anarish-website-v3.vercel.app/sendmail',userData)
-      .pipe(
-        catchError(this.handleError)
-      );
-  } 
+  // sendMail(userData:UserData): Observable<UserData> {
+  //   return this.http.post<any>('https://anarish-website-v3.vercel.app/sendmail',userData)
+  //     .pipe(
+  //       catchError(this.handleError)
+  //     );
+  // } 
   private handleError(error: any): Observable<any> {
     console.error('An error occurred:', error);
     return throwError('Something bad happened; please try again later.');
