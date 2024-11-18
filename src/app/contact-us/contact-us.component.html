@@ -7,26 +7,43 @@
                     <form action="" #formData="ngForm" (ngSubmit)="submitHandler(formData)">
                         <div class="mb-4 pt-3">
                             <label for="exampleFormControlInput1" class="form-label">What is your name? *</label>
-                            <input type="text" class="form-control" required name="name" #name="ngModel"
-                                id="exampleFormControlInput1" placeholder="Your Name" placeholder="" [(ngModel)]="userData.name">
-                            <small class="text-danger ps-1" *ngIf="name.errors?.['required'] && submitted">Name is
-                                required</small>
+                            <input type="text" class="form-control" required name="name" #name="ngModel" 
+                                id="exampleFormControlInput1" placeholder="Your Name" placeholder="Jhon doe" [(ngModel)]="userData.name"
+                                pattern="^[a-zA-Z\s\-']+$">
+                            <small class="text-danger ps-1" *ngIf="name.errors?.['required'] && submitted">Please Enter Your Name 
+                            </small>
+                            <small class="text-danger ps-1" *ngIf="name.errors?.['pattern'] && submitted" style="font-weight: bold;">
+                                Name can only contain letters, spaces, hyphens, and apostrophes.
+                            </small>
 
                     </div>
                     <div class="mb-4">
                         <label for="exampleFormControlInput1" class="form-label">What is your email address? *</label>
                         <input #email="ngModel" type="email" placeholder="Email" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" required class="form-control" name="email" 
-                            placeholder="" [(ngModel)]="userData.email">
-                            <small class="text-danger ps-2" *ngIf="email.errors?.['required'] && submitted">Email is required</small>
-                            <small class="text-danger ps-2" *ngIf="email.errors?.['pattern'] && submitted">Enter a valid email address</small>
+                            placeholder="Example@gmail.com" [(ngModel)]="userData.email">
+                            <small class="text-danger ps-2" *ngIf="email.errors?.['required'] && submitted">Please Enter Your Email</small>
+                            <small class="text-danger ps-2" *ngIf="email.errors?.['pattern'] && submitted">Please Enter a valid email address</small>
                     </div>
                    
-                    <div class="mb-4">
-                        <label for="exampleFormControlInput1" class="form-label">What is your phone number?</label>
-                        <input type="number" class="form-control" #phoneNumber="ngModel" name="phoneNumber" [(ngModel)]="userData.phoneNumber"
-                            placeholder="Phone Number" pattern="^[0-9]{10}$"  minlength="10" maxlength="10" required>
+                    <!-- <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">What is your phone number? *</label>
+                        <input type="text" class="form-control" #phoneNumber="ngModel" name="phoneNumber" [(ngModel)]="userData.phoneNumber"
+                            placeholder="Phone Number" pattern="[+]?[0-9\s\-\(\)]*$" maxlength="15" minlength="10" required>
+                            <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['required'] && submitted">Please Enter Your PhoneNumber.</small>
                             <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['pattern'] && submitted">Phone Number should contain 10 numbers only</small>
+                    </div> -->
+                    <div class="mb-4">
+                        <label for="exampleFormControlInput1" class="form-label">What is your phone number? *</label>
+                        <input type="text" class="form-control" #phoneNumber="ngModel" name="phoneNumber" [(ngModel)]="userData.phoneNumber"
+                            placeholder="Phone Number" 
+                            pattern="^\+?(\d{1,4})?[\s\-]?\(?\d{1,4}\)?[\s\-]?\d{1,4}[\s\-]?\d{1,4}$" 
+                            maxlength="15" minlength="10" required>
+                        <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['required'] && submitted">Please Enter Your PhoneNumber.</small>
+                        <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['pattern'] && submitted">Phone Number should only contain numbers, spaces, +, -, (, and ).</small>
+                        <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['minlength'] && submitted">Phone Number must be at least 10 characters long.</small>
+                        <small class="text-danger ps-2" *ngIf="phoneNumber.errors?.['maxlength'] && submitted">Phone Number cannot be more than 15 characters long.</small>
                     </div>
+                    
                  
                     <p class="checkbox-header mb-1">Interested in:</p> 
                     <div class="row mb-4">
