@@ -8,7 +8,7 @@
                         <div class="mb-4 pt-3">
                             <label for="exampleFormControlInput1" class="form-label">What is your name? *</label>
                             <input type="text" class="form-control" required name="name" #name="ngModel" 
-                                id="exampleFormControlInput1" placeholder="Your Name" placeholder="Jhon doe" [(ngModel)]="userData.name"
+                                id="exampleFormControlInput1" placeholder="Your Name" placeholder="Your Name" [(ngModel)]="userData.name"
                                 pattern="^[a-zA-Z\s\-']+$">
                             <small class="text-danger ps-1" *ngIf="name.errors?.['required'] && submitted">Please Enter Your Name 
                             </small>
