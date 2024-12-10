@@ -12,7 +12,6 @@ export class AppService {
   constructor(private http: HttpClient){
   }
   saveData(userData:UserData): Observable<UserData> {
-    console.log("hiii");
     
     return this.http.post<any>('https://anarish-staging-backend.vercel.app/users/submitform',userData)
     // return this.http.post<any>('http://localhost:3000/users/submitform',userData)
