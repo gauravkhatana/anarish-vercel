@@ -12,13 +12,22 @@ export class AppService {
   constructor(private http: HttpClient){
   }
   saveData(userData:UserData): Observable<UserData> {
-    return this.http.post<any>('https://anarish-website-v3.vercel.app/users',userData)
+    console.log("hiii");
+    
+    return this.http.post<any>('https://anarish-staging-backend.vercel.app/users/submitform',userData)
+    // return this.http.post<any>('http://localhost:3000/users/submitform',userData)
       .pipe(
         catchError(this.handleError)
       );
   }
+  //   return this.http.post<any>('https://anarish-website-v3.vercel.app/users',userData)
+  //     .pipe(
+  //       catchError(this.handleError)
+  //     );
+  // }
+
   // sendMail(userData:UserData): Observable<UserData> {
-  //   return this.http.post<any>('https://anarish-website-v3.vercel.app/sendmail',userData)
+  //   return this.http.post<any>('https://anarish-staging-backend.vercel.app/users/submitforml',userData)
   //     .pipe(
   //       catchError(this.handleError)
   //     );
