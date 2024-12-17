@@ -1,48 +1,138 @@
 <main class="theme-color-bg-light-yellow">
-    <section class="masthead  theme-color-bg-blue">
-        <div class="container ">
-            <div id="blue-bg" class="row gy-3 mt-5">
+    <!-- Bootstrap Carousel Section -->
+    <section class="masthead">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators (Optional, for navigation dots below the carousel) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button> 
+             </div> 
+    
+            <div class="carousel-inner">
+    
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class=" theme-color-bg-blue">
+                        <div class="container">
+                            <div id="blue-bg" class="row gy-3">
+                                <div class="col-12 col-lg-6 ">
+                                    <div class="wrapper-header">
+                                        <h1 class="sentence">
+                                            Empowering your business through
+                                            <span class="txt-type"></span>
+                                        </h1>
+                                        <p class="desc">
+                                            We empower your brand to navigate the digital landscape with our
+                                            state-of-the-art UI/UX
+                                            solutions, robust software development, and targeted digital marketing
+                                            strategies.
+                                        </p>
+                                        <p>
+                                            <a class="btn btn-xl btn-primary" routerLink='/contact-us'> Get Started!</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="empower col-12 col-lg-6">
+                                    <picture>
+                                        <img src="assets/img/main/empowering.webp" class="img-fluid" alt="empowering">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide 2 -->
+                <div class="carousel-item ">
+                    <div class="latest-banner slide-bg">
+                    <div class="container ">
+                        <div class="row ">
+                                <div class="col-lg-3 first-part CHRO-banner mt-3">
+                                    <h3>PROUD SPONSOR</h3>
+                                </div>
 
-                <div class="col-12 col-lg-6">
-                    <div class="wrapper-header">
-                    <h1 class="sentence">
 
-                        Empowering your business
-                            through
-                            <span class="txt-type"></span>
-                        
-                        <!-- <div class="words words-1">
-                            <span>Design</span>
-                            <span>Code</span>
-                            <span>strategy</span>
-                        </div> -->
-                    </h1>
-                    <p class="desc">
-                        We empower your brand to navigate the digital landscape with our state-of-the-art UI/UX
-                        solutions, robust software development, and targeted digital marketing strategies.
-                    </p>
-                    <p class="">
-                        <a class="btn btn-xl btn-primary" routerLink='/contact-us'> Get Started!</a>
-                    </p>
+                               <div class="col-lg-6 second-part mt-5 mb-5">
+                                <img src="../../assets/img/main/CHRO.png" class="chro-logo" alt="CHRO Logo">
+                                <p>FUTURE-PROOFING BUSINESS </p>
+                                 <p> STRATEGIES FOR GROWTH AMID UNCERTAINTY</p>
+                                 <div class="anarish-img mt-3">
+                                    <img src="../../assets/img/main/phdcci.jpg" alt="PHDCCI">
+                                    <img src="../../assets/img/main/Anarish.png" alt="Anarish-Innovation">
+                                 </div>
+                               </div>
+
+                               <div class="col-lg-3 third-part mt-3">
+                                <div class="d-flex align-items-center gap-4">
+                                <a href="https://www.phdcci.in/events/esg-practitioner-certificationational-chro-summitn-batch-3-2/" 
+                                   class="chro-btn" target="_blank">
+                                    Register Now
+                                </a>
+                                <img src="../../assets/img/main/QR-code.jpg" alt="QrCode">
+                            </div>
+                        </div>
+                            </div>
+
+                            <!-- Second Row  -->
+                            <div class="d-flex">
+                                <div class="left-part">
+                                    <div class="d-flex justify-content-between gap-3">
+                                <div class="event-date">
+                                    <p><span>16th</span></p>
+                                    <p class="year">2025</p>
+                                </div>
+                                <div class="event-location mt-2">
+                                    <p><span>January</span></p>
+                                    <p class="event-add"> PHD House, New Delhi</p> 
+                                </div>
+                            </div>
+                            <div class="chro-site">
+                               <a href="https://nationalchrosummit.in/" target="_blank" >www.nationalchrosummit.in</a>
+                              
+                            </div>
+                        </div>
+                                <div class="right-part ms-auto">
+                                    <div class="ts-count-down">
+                                        <div class="d-flex countdown clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
+                                            <div class="counter-item">
+                                                <span class="days">00</span>
+                                                <div class="smalltext">Days</div>
+                                                <!-- <b>:</b> -->
+                                            </div>
+                                            <div class="counter-item">
+                                                <span class="hours">00</span>
+                                                <div class="smalltext">Hours</div>
+                                                <!-- <b>:</b> -->
+                                            </div>
+                                            <div class="counter-item">
+                                                <span class="minutes">00</span>
+                                                <div class="smalltext">Minutes</div>
+                                                <!-- <b>:</b> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </div>
-                <div class="empower col-12 col-lg-6">
-                    <picture>
-                        <!-- <source srcset="assets/img/main/empowering.avif" type="image/avif"> -->
-                        <img src="assets/img/main/empowering.webp" class="img-fluid" alt="empowering">
-                    </picture>
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="svg">
+        </section>
+    
+
+
+    <!-- <section class="svg">
         <svg class="css-vxjk88" width="1620" height="128" viewBox="0 0 1620 128" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M1620 0V53.3465L1528.65 79.1847C1518.92 81.9385 1508.89 83.5464 1498.79 83.9757L473.53 127.51C465.858 127.836 458.173 127.482 450.564 126.451L0 65.4176V0H1620Z">
             </path>
         </svg>
-    </section>
+    </section>  -->
 
     <section class="offerings pb-0">
         <div class="container">
@@ -58,15 +148,15 @@
                 <div class="row row-gap">
                     <div class="col-12 col-xl-6 ">
                         <div class="accordion bg-color" id="accordionExample" #accordionExample>
-                            <div class="accordion-item" >
-                                <h2 class="accordion-header" >
-                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"  type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                        aria-controls="collapseOne">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
                                         UI/UX Design </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    [class.position-static]="!showAccordionBar" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         We blend functionality with aesthetics to craft intuitive journeys. We shape
                                         user-centric experiences that empower, engage, and exceed expectations.
@@ -76,13 +166,13 @@
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
                                         Software Development </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    [class.position-static]="!showAccordionBar" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         Unlock captivating digital interfaces with our Front-End Engineering expertise,
                                         bringing your online vision to life for seamless user engagement across devices.
@@ -93,13 +183,13 @@
 
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
                                         Branding & Digital Marketing </button>
                                 </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    [class.position-static]="!showAccordionBar" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         Unlock your business's potential with our digital marketing solutions. From SEO
                                         and PPC to social media and content marketing, we create tailored strategies to
@@ -109,13 +199,13 @@
                             </div>
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
-                                        aria-controls="collapseFour">
+                                    <button class="accordion-button collapsed mx-0" (click)="stopAccordionLoop()"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="false" aria-controls="collapseFour">
                                         Pitch Perfect Decks</button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse" [class.position-static]="!showAccordionBar"
-                                    data-bs-parent="#accordionExample">
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    [class.position-static]="!showAccordionBar" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         Let our experienced team craft engaging,impactful Powerpoint presentations ,
                                         from corporate decks to sales pitches.
@@ -439,7 +529,8 @@
                     <div class="col-12 col-lg-6 col-height">
                         <div class="pixcel-video">
                             <div class="video-wrapper embed-responsive embed-responsive-16by9">
-                                <video playsinline id="my-video" loading="lazy" class="embed-responsive-item" autoplay muted loop>
+                                <video playsinline id="my-video" loading="lazy" class="embed-responsive-item" autoplay
+                                    muted loop>
                                     <source src="assets/img/main/main-animation.mp4">
                                 </video>
                             </div>
@@ -539,7 +630,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class=" col-12 offset-xl-1 col-lg-6 col-xl-5 order-lg-2 m-auto d-flex justify-content-center">
+                        <div
+                            class=" col-12 offset-xl-1 col-lg-6 col-xl-5 order-lg-2 m-auto d-flex justify-content-center">
                             <div class="powerpoint-img">
                                 <picture>
                                     <!-- <source srcset="assets/img/main/Powerpoint-service1.avif" type="image/avif"> -->
@@ -579,19 +671,19 @@
                                 class="cm-logo img-fluid">
                         </div>
 
-                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/function-apps.png" alt="function-app-logo"
-                                class="cm-logo-sm img-fluid">
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/function-apps.png"
+                                alt="function-app-logo" class="cm-logo-sm img-fluid">
                         </div>
-                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/stem-u.png" alt="stem-logo"
-                                class="cm-logo img-fluid">
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/stem-u.png"
+                                alt="stem-logo" class="cm-logo img-fluid">
                         </div>
                         <div class="col-6 col-md-4 col-xl-3"><img src="assets/img/main/logos/path-u.png" alt="path-logo"
                                 class="cm-logo img-fluid"></div>
                         <div class="col-6 col-md-4 col-xl-3">
                             <img src="assets/img/main/logos/compro-u.png" alt="compro-logo" class="cm-logo img-fluid">
                         </div>
-                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/oakter.png" alt="oakter-logo"
-                                class="cm-logo-sm img-fluid">
+                        <div class="col-6 col-md-4 col-xl-3"> <img src="assets/img/main/logos/oakter.png"
+                                alt="oakter-logo" class="cm-logo-sm img-fluid">
                         </div>
 
                     </div>
@@ -609,8 +701,8 @@
                                         <div class="card">
                                             <div class="image-content">
                                                 <div class="card-image">
-                                                    <img src="../../assets/img/main/ashish-sharma.jpg" alt="Mobilise-Founder"
-                                                        class="card-img">
+                                                    <img src="../../assets/img/main/ashish-sharma.jpg"
+                                                        alt="Mobilise-Founder" class="card-img">
                                                 </div>
                                                 <div class="card-d d-flex flex-column justify-content-center">
                                                     <h3 class="card-title">Ashish Sharma</h3>
@@ -631,8 +723,8 @@
                                         <div class="card">
                                             <div class="image-content">
                                                 <div class="card-image">
-                                                    <img src="../../assets/img/main/nitin-gambhir.jpg" alt="stem-center-Founder"
-                                                        class="card-img">
+                                                    <img src="../../assets/img/main/nitin-gambhir.jpg"
+                                                        alt="stem-center-Founder" class="card-img">
                                                 </div>
                                                 <div class="card-d d-flex flex-column justify-content-center">
                                                     <h3 class="card-title">Nitin Gambhir</h3>
@@ -651,8 +743,8 @@
                                         <div class="card">
                                             <div class="image-content">
                                                 <div class="card-image">
-                                                    <img src="../../assets/img/main/sudhanshu-jain.jpg" alt="vp-Teon-Facility-Management"
-                                                        class="card-img">
+                                                    <img src="../../assets/img/main/sudhanshu-jain.jpg"
+                                                        alt="vp-Teon-Facility-Management" class="card-img">
                                                 </div>
                                                 <div class="card-d d-flex flex-column justify-content-center">
                                                     <h3 class="card-title">Sudhanshu Jain</h3>

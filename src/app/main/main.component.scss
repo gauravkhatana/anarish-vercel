@@ -1,12 +1,21 @@
 @import '../../bootstrap-imports';
 
-.wrapper-header{
+
+.wrapper-header {
     max-width: 80%;
+    margin-top: 100px;
+    margin-bottom: 110px;
 }
+
+.masthead .carousel-item .container {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 
 .masthead {
     @include media-breakpoint-up(xl) {
-        padding-top: 6rem;
+        // padding-top: 6rem;
     }
 
     color: #010;
@@ -19,12 +28,222 @@
         span {
             display: inline-block;
             width: 8em;
-        
+
             @media (min-width: 436px) {
-                width: auto; 
+                width: auto;
             }
         }
     }
+
+    //--------------------------------------------------------------------------------------------------------------------------------------
+    .carousel-indicators button {
+        background-color: black !important;
+        /* Makes the indicators black */
+        opacity: 0.7;
+        /* Optional: Sets transparency */
+    }
+
+    .carousel-indicators .active {
+        background-color: black !important;
+        /* Ensures active indicator is also black */
+        opacity: 1;
+        /* Makes the active one fully visible */
+    }
+
+    .slide-bg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../../assets/img/main/new-slideimg.jpeg');
+    }
+
+    .CHRO-banner h3 {
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 41.786px;
+        background: linear-gradient(270deg, #332F8E 38.11%, #FF007A 98.42%);
+        background-clip: text !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+
+    .second-part {
+        text-align: -webkit-center;
+    }
+
+    .second-part .chro-logo {
+        height: 133px;
+        flex-shrink: 0;
+        align-self: stretch;
+        padding-bottom: 16px;
+    }
+
+    .second-part p {
+        align-self: stretch;
+        text-align: center;
+        // font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background: linear-gradient(90deg, #3B1D82 0%, #FF007A 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+    }
+
+    .second-part .anarish-img {
+        display: flex;
+        width: 407.002px;
+        align-items: center;
+        gap: 34.974px;
+        justify-content: space-around;
+        padding-top: 70px;
+    }
+
+    .third-part {
+        gap: 30px;
+        align-items: center;
+    }
+
+    .third-part .chro-btn {
+        display: flex;
+        padding: 8px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 12.774px;
+        max-height: 36px;
+        border-radius: 29.379px;
+        background: #FF007A;
+        color: #FFF;
+        border: none;
+        text-decoration: none;
+    }
+
+    .left-part .event-date p span {
+        align-self: stretch;
+        color: #FF007A;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .left-part .event-date .year {
+        align-self: stretch;
+        color: #3B1D82;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+
+    .left-part .event-location p span {
+        color: #3B1D82;
+        text-align: right;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .left-part .event-location .event-add {
+        color: #3B1D82;
+        text-align: right;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .chro-site {
+        width: 270px;
+        height: 34px;
+        background: #332F8E;
+        margin-top: 10px;
+    }
+
+    .chro-site a {
+        color: #FFF;
+        // font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 8px;
+        // margin-top: 6px;
+        line-height: normal;
+    }
+
+
+
+
+    .right-part {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .ts-count-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .countdown {
+        display: inline-flex;
+        padding: 15px;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .counter-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .counter-item span {
+        color: #EB008F;
+        font-family: 'Manrope', sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: normal;
+        padding: 5px;
+        background: linear-gradient(135deg, #FDEFF9, #FFE3ED);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        min-width: 50px;
+    }
+
+    .counter-item .smalltext {
+        font-family: 'Manrope', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+        margin-top: 5px;
+    }
+
+    .counter-item b {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #333;
+    }
+
+    //------------------------------------------------------------------------------------------------------------------------------------
 
     .animation-line {
         position: relative;
@@ -62,6 +281,8 @@
     .empower {
         display: flex;
         align-items: center;
+        margin-top: 100px;
+        margin-bottom: 110px;
 
         img {
             border-radius: 9px;
