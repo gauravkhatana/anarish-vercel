@@ -7,11 +7,11 @@
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button> 
-             </div> 
-    
+                    aria-label="Slide 2"></button>
+            </div>
+
             <div class="carousel-inner">
-    
+
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class=" theme-color-bg-blue">
@@ -43,73 +43,71 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Slide 2 -->
                 <div class="carousel-item ">
                     <div class="latest-banner slide-bg">
-                    <div class="container ">
-                        <div class="row ">
+                        <div class="container ">
+                            <div class="row ">
                                 <div class="col-lg-3 first-part CHRO-banner mt-3">
                                     <h3>PROUD SPONSOR</h3>
                                 </div>
 
 
-                               <div class="col-lg-6 second-part mt-5 mb-5">
-                                <img src="../../assets/img/main/CHRO.png" class="chro-logo" alt="CHRO Logo">
-                                <p>FUTURE-PROOFING BUSINESS </p>
-                                 <p> STRATEGIES FOR GROWTH AMID UNCERTAINTY</p>
-                                 <div class="anarish-img mt-3">
-                                    <img src="../../assets/img/main/phdcci.jpg" alt="PHDCCI">
-                                    <img src="../../assets/img/main/Anarish.png" alt="Anarish-Innovation">
-                                 </div>
-                               </div>
+                                <div class="col-lg-6 second-part mt-5 mb-5">
+                                    <img src="../../assets/img/main/CHRO.png" class="chro-logo" alt="CHRO Logo">
+                                    <p>FUTURE-PROOFING BUSINESS </p>
+                                    <p> STRATEGIES FOR GROWTH AMID UNCERTAINTY</p>
+                                    <div class="anarish-img mt-3">
+                                        <img src="../../assets/img/main/phdcci.jpg" alt="PHDCCI">
+                                        <img src="../../assets/img/main/Anarish.png" alt="Anarish-Innovation">
+                                    </div>
+                                </div>
 
-                               <div class="col-lg-3 third-part mt-3">
-                                <div class="d-flex align-items-center gap-4">
-                                <a href="https://www.phdcci.in/events/esg-practitioner-certificationational-chro-summitn-batch-3-2/" 
-                                   class="chro-btn" target="_blank">
-                                    Register Now
-                                </a>
-                                <img src="../../assets/img/main/QR-code.jpg" alt="QrCode">
-                            </div>
-                        </div>
+                                <div class="col-lg-3 third-part mt-3">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <a href="https://www.phdcci.in/events/esg-practitioner-certificationational-chro-summitn-batch-3-2/"
+                                            class="chro-btn" target="_blank">
+                                            Register Now
+                                        </a>
+                                        <img src="../../assets/img/main/QR-code.jpg" alt="QrCode">
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- Second Row  -->
                             <div class="d-flex">
                                 <div class="left-part">
                                     <div class="d-flex justify-content-between gap-3">
-                                <div class="event-date">
-                                    <p><span>16th</span></p>
-                                    <p class="year">2025</p>
+                                        <div class="event-date">
+                                            <p><span>16th</span></p>
+                                            <p class="year">2025</p>
+                                        </div>
+                                        <div class="event-location mt-2">
+                                            <p><span>January</span></p>
+                                            <p class="event-add"> PHD House, New Delhi</p>
+                                        </div>
+                                    </div>
+                                    <div class="chro-site">
+                                        <a href="https://nationalchrosummit.in/"
+                                            target="_blank">www.nationalchrosummit.in</a>
+
+                                    </div>
                                 </div>
-                                <div class="event-location mt-2">
-                                    <p><span>January</span></p>
-                                    <p class="event-add"> PHD House, New Delhi</p> 
-                                </div>
-                            </div>
-                            <div class="chro-site">
-                               <a href="https://nationalchrosummit.in/" target="_blank" >www.nationalchrosummit.in</a>
-                              
-                            </div>
-                        </div>
                                 <div class="right-part ms-auto">
                                     <div class="ts-count-down">
-                                        <div class="d-flex countdown clearfix wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="400ms">
+                                        <div class="d-flex countdown clearfix">
                                             <div class="counter-item">
-                                                <span class="days">00</span>
+                                                <span class="days">{{ days }}</span>
                                                 <div class="smalltext">Days</div>
-                                                <!-- <b>:</b> -->
                                             </div>
                                             <div class="counter-item">
-                                                <span class="hours">00</span>
+                                                <span class="hours">{{ hours }}</span>
                                                 <div class="smalltext">Hours</div>
-                                                <!-- <b>:</b> -->
                                             </div>
                                             <div class="counter-item">
-                                                <span class="minutes">00</span>
+                                                <span class="minutes">{{ minutes }}</span>
                                                 <div class="smalltext">Minutes</div>
-                                                <!-- <b>:</b> -->
                                             </div>
                                         </div>
                                     </div>
@@ -118,12 +116,11 @@
                         </div>
                     </div>
                 </div>
-
-                </div>
             </div>
+        </div>
 
-        </section>
-    
+    </section>
+
 
 
     <!-- <section class="svg">
