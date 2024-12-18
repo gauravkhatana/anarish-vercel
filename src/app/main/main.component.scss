@@ -2,9 +2,9 @@
 
 
 .wrapper-header {
-    max-width: 80%;
-    // margin-top: 100px;
-    // margin-bottom: 110px;
+    @include media-breakpoint-up(xl) {
+        max-width: 85%;
+    }
 }
 
 .masthead .carousel-item .container {
@@ -12,30 +12,21 @@
     padding-top: 0;
 }
 
-
 .masthead {
-    @include media-breakpoint-up(xl) {
-        // padding-top: 6rem;
-    }
-
     color: #010;
-
     h1 {
         line-height: 1.5;
         margin-bottom: 36px;
-        font-size: 40px;
-
+        font-size: 38px;
         span {
-            display: inline-block;
             width: 8em;
-
             @media (min-width: 436px) {
                 width: auto;
             }
         }
     }
 .get-started-style{
-    margin-bottom: 49px;
+    margin-bottom: 60px;
 }
     //--------------------------------------------------------------------------------------------------------------------------------------
     .carousel-indicators button {
@@ -63,16 +54,22 @@
         background-image: url('../../assets/img/main/new-slideimg.jpeg');
     }
 
-    .CHRO-banner h3 {
-        font-size: 28px;
+    .CHRO-banner {
+        background-color: #ffe4f5;
+        text-align: center;
+        border-radius: 4px;
+        padding: 4px 12px;
+        h3 {
+        font-size: 23px;
         font-style: italic;
         font-family: 'Montserrat';
-        font-weight: 600;
-        line-height: 41.786px;
+        font-weight: 700;
+        line-height: 1.3;
         background: linear-gradient(270deg, #332F8E 38.11%, #FF007A 98.42%);
-        background-clip: text !important;
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
+        background-clip: text;
+        -webkit-background-clip: text ;
+        -webkit-text-fill-color: transparent ;
+        }
     }
 
     .second-part {
@@ -91,7 +88,7 @@
         text-align: center;
         font-size: 24px;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.3;
         background: linear-gradient(90deg, #3B1D82 0%, #FF007A 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -198,10 +195,8 @@
 
     .countdown {
         display: inline-flex;
-        padding: 15px;
         justify-content: center;
         align-items: center;
-        gap: 15px;
     }
 
     .counter-item {
@@ -276,15 +271,8 @@
     .empower {
         display: flex;
         align-items: center;
-        // margin-top: 100px;
-        // margin-bottom: 110px;
-
         img {
             border-radius: 9px;
-
-            @include media-breakpoint-up(xl) {
-                width: 90%;
-            }
         }
     }
 
@@ -300,7 +288,7 @@
         @include media-breakpoint-up(xl) {
             font-size: 16px;
             margin-top: 48px;
-            padding: 24px 56px;
+            padding: 12px 56px;
         }
 
         @include media-breakpoint-up(xxl) {
