@@ -41,8 +41,8 @@
     .carousel-indicators button {
         background-color: black !important;
         /* Makes the indicators black */
-        opacity: 0.7;
-        /* Optional: Sets transparency */
+        opacity: 0.4;
+       
     }
 
     .carousel-indicators .active {
@@ -66,7 +66,7 @@
     .CHRO-banner h3 {
         font-size: 28px;
         font-style: italic;
-        font-family: Montserrat;
+        font-family: 'Montserrat';
         font-weight: 600;
         line-height: 41.786px;
         background: linear-gradient(270deg, #332F8E 38.11%, #FF007A 98.42%);
@@ -115,6 +115,7 @@
     .second-part .vertical-line {
         width: 1px;
         background-color: #000;
+        opacity: 0.1;
     }
 
     .third-part {
