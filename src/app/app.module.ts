@@ -23,6 +23,7 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
 import { AboutUsComponent } from './about-us/about-us.component';
 import { DatePipe, HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { QueriesComponent } from './queries/queries.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     WebsiteDesignComponent,
     DigitalMarketingComponent,
     AboutUsComponent,
+    QueriesComponent,
   ],
   imports: [
     HttpClientModule,

@@ -1,0 +1,25 @@
+<h1>User Data</h1>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Interests</th>
+      <th>Project Requirements</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user._id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.phoneNumber }}</td>
+      <td>{{ user.intrests.join(', ') }}</td>
+      <td>{{ user.projectRequirements }}</td>
+      <td>{{ user.date }}</td> <!-- Display raw date string -->
+    </tr>
+  </tbody>
+</table>

@@ -5,6 +5,7 @@ import { MainComponent } from './main/main.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { RootPortfolioPageComponent } from './root-portfolio/root-portfolio.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { QueriesComponent } from './queries/queries.component'; 
 
 const routes: Routes = [{
   path: "",
@@ -25,7 +26,9 @@ const routes: Routes = [{
     {
       path: 'portfolio/:id',
       component: RootPortfolioPageComponent
-    }
+    },
+    { path: 'queries', 
+      component: QueriesComponent }
   ]
 },
 ];
