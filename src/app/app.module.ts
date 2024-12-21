@@ -35,6 +35,7 @@ import { QueriesComponent } from './queries/queries.component';
     HeaderComponent,
     RootComponent,
     MainComponent,
+    QueriesComponent,
   
     RootPortfolioPageComponent,
     HrmsComponent,
