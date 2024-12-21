@@ -1,25 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { DatePipe } from '@angular/common';
 
 interface User {
-  _id: string;
   name: string;
   email: string;
   phoneNumber: string;
   intrests: string[];
   projectRequirements: string;
-  date: string;
+  date: string; // Keep as string initially
 }
 
 @Component({
   selector: 'app-queries',
   templateUrl: './queries.component.html',
-  styleUrls: ['./queries.component.scss']
+  styleUrls: ['./queries.component.scss'],
+  providers: [DatePipe]
 })
 export class QueriesComponent implements OnInit {
   users: User[] = [];
+  searchQuery: string = ''; // Search query property
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private datePipe: DatePipe) {}
 
   ngOnInit(): void {
     this.fetchUserData();
@@ -31,17 +33,26 @@ export class QueriesComponent implements OnInit {
 
       // Filter users with valid dates and sort by date in descending order
       this.users = response.users
-        .filter(user => this.isValidDate(user.date))  // Remove users with invalid dates
+        .filter(user => this.isValidDate(user.date))
         .map(user => {
-          user.date = this.parseDate(user.date);  // Ensure the date is in ISO format
+          user.date = this.parseDate(user.date); // Convert to ISO format
           return user;
         })
-        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // Sort by date in descending order
+        .map(user => {
+          user.date = this.formatDate(user.date); // Format the date after sorting
+          return user;
+        });
 
       console.log('Users in component (sorted):', this.users);
     }, error => {
       console.error('Error fetching user data:', error);
     });
+  }
+
+  formatDate(dateString: string): string {
+    const date = new Date(dateString);
+    return this.datePipe.transform(date, 'dd-MM-yyyy HH:mm:ss') || 'Invalid Date';
   }
 
   parseDate(dateString: string): string {
@@ -66,7 +77,6 @@ export class QueriesComponent implements OnInit {
 
       return `${year}-${months[month as keyof typeof months]}-${day}T${time}`;
     } catch (error) {
-      // console.warn('Error in parseDate:', error.message);
       return 'Invalid Date';
     }
   }

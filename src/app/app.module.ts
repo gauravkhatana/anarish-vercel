@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'; // Import FormsModule
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
@@ -23,6 +23,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DatePipe, PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { QueriesComponent } from './queries/queries.component';
+import { FilterPipe } from './pipes/filter.pipe'; // Import FilterPipe
 
 @NgModule({
   declarations: [
@@ -34,7 +35,6 @@ import { QueriesComponent } from './queries/queries.component';
     RootComponent,
     MainComponent,
     QueriesComponent,
-    
     RootPortfolioPageComponent,
     HrmsComponent,
     LmsComponent,
@@ -42,7 +42,8 @@ import { QueriesComponent } from './queries/queries.component';
     MsComponent,
     WebsiteDesignComponent,
     DigitalMarketingComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    FilterPipe // Declare FilterPipe
   ],
   imports: [
     HttpClientModule,
@@ -50,6 +51,7 @@ import { QueriesComponent } from './queries/queries.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    FormsModule, // Add FormsModule
     SlickCarouselModule
   ],
   providers: [
