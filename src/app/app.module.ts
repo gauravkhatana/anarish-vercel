@@ -23,7 +23,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { DatePipe, PathLocationStrategy, LocationStrategy } from '@angular/common';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { QueriesComponent } from './queries/queries.component';
-import { FilterPipe } from './pipes/filter.pipe'; // Import FilterPipe
+import { FilterPipe } from './pipes/filter.pipe';
+// import { VisitorCounterComponent } from './visitor-counter/visitor-counter.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { FilterPipe } from './pipes/filter.pipe'; // Import FilterPipe
     WebsiteDesignComponent,
     DigitalMarketingComponent,
     AboutUsComponent,
-    FilterPipe // Declare FilterPipe
+    FilterPipe,
+    // VisitorCounterComponent
+
   ],
   imports: [
     HttpClientModule,

@@ -2,34 +2,53 @@
 
   <nav class="navbar navbar-expand-lg fixed-top navbar-shrink">
     <div class="container">
-      <a class="navbar-brand" routerLink='/' >
-        <img src="assets/img/anarish-logo-4.png"  alt="Anarish Innovations" class="img-fluid" />
+      <a class="navbar-brand" routerLink='/'>
+        <img src="assets/img/anarish-logo-4.png" alt="Anarish Innovations" class="img-fluid" />
       </a>
-      <button (click)="isDropdownShow = true" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" [class.show]="isDropdownShow" [attr.aria-expanded]="isDropdownShow" aria-label="Toggle navigation">
-         Menu<span class="navbar-toggler-icon"></span>
+      <button (click)="isDropdownShow = true" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" [class.show]="isDropdownShow"
+        [attr.aria-expanded]="isDropdownShow" aria-label="Toggle navigation">
+        Menu<span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" [class.show]="isDropdownShow" id="navbarNavDropdown">
         <ul class="navbar-nav">
+          <!-- Visitor Counter code  -->
+          <li class="nav-item" *ngIf="showVisitorCounter">
+              <p class="mb-0 mt-2">Visitors Count <a href="http://www.freevisitorcounters.com">at freevisitorcounters.com</a>
+                <script type='text/javascript'
+                  src='https://www.freevisitorcounters.com/auth.php?id=bd32b679d92d3e6265104747179099401ed08b40'></script>
+                <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1277242/t/3"></script>
+              </p>
+          </li>
           <li class="nav-item dropdown">
-            <a (click)="isDropdownShow = !isDropdownShow" [ngClass]="{'active': isPortfolioActive}"  class="nav-link dropdown-toggle nav-content-black" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }"  href="#" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="20,0">
+            <a (click)="isDropdownShow = !isDropdownShow" [ngClass]="{'active': isPortfolioActive}"
+              class="nav-link dropdown-toggle nav-content-black" routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false" data-bs-offset="20,0">
               Portfolio
             </a>
             <ul class="dropdown-menu " [class.show]="isDropdownShow">
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/1"  routerLinkActive="active">Customer Relationship Management System</a></li>
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/2"  routerLinkActive="active">HR Management System</a></li>
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/3"  routerLinkActive="active">Website Design and Development</a></li>
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/4"  routerLinkActive="active">Learning Management System</a></li>
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/5"  routerLinkActive="active">Mobile Solutions</a></li>
-              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/6"  routerLinkActive="active">Digital Marketing</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/1"
+                  routerLinkActive="active">Customer Relationship Management System</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/2"
+                  routerLinkActive="active">HR Management System</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/3"
+                  routerLinkActive="active">Website Design and Development</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/4"
+                  routerLinkActive="active">Learning Management System</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/5"
+                  routerLinkActive="active">Mobile Solutions</a></li>
+              <li><a class="dropdown-item" (click)="isDropdownShow = false" routerLink="portfolio/6"
+                  routerLinkActive="active">Digital Marketing</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-content-black" (click)="isDropdownShow = false" routerLinkActive="active" routerLink='about-us' >About Us</a>
+            <a class="nav-link nav-content-black" (click)="isDropdownShow = false" routerLinkActive="active"
+              routerLink='about-us'>About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-content-black" (click)="isDropdownShow = false" routerLinkActive="active" routerLink='contact-us'>Contact Us</a>
+            <a class="nav-link nav-content-black" (click)="isDropdownShow = false" routerLinkActive="active"
+              routerLink='contact-us'>Contact Us</a>
           </li>
         </ul>
       </div>
